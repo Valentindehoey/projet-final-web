@@ -1,0 +1,148 @@
+body {
+  background-color: #ecfffb;
+  max-width: 411px;
+  width: 100%;
+  height: 100vh; }
+  body img {
+    width: 100%; }
+  body header {
+    background: linear-gradient(#141E03, #27350F);
+    text-align: center;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 1em;
+    position: fixed;
+    z-index: 2; }
+    body header img {
+      width: 20%;
+      border-style: none;
+      filter: invert(1); }
+  body footer {
+    padding-bottom: 4em;
+    text-align: center;
+    background-color: #17b978;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    body footer .left {
+      grid-row: 1/2; }
+      body footer .left p {
+        padding: 1em; }
+      body footer .left ul {
+        list-style-type: none;
+        padding: 0; }
+        body footer .left ul li {
+          margin: 1em; }
+    body footer .right {
+      grid-row: 2/3; }
+  body main {
+    padding: 4em 0;
+    background: linear-gradient(to bottom, #086972 0%, #071a52 100%);
+    color: white; }
+    body main h1 {
+      font-size: 1.5em;
+      width: fit-content;
+      margin: 2em auto; }
+    body main .top figure {
+      margin: 0;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 6px 7px 25px -10px rgba(0, 0, 0, 0.75); }
+      body main .top figure img {
+        filter: brightness(0.7);
+        width: 100%;
+        margin-bottom: -0.5em;
+        border-radius: 10px 10px 0 0; }
+      body main .top figure figcaption {
+        color: white;
+        background: linear-gradient(#27350F, #141E03);
+        padding: 1.5em 0;
+        text-align: center; }
+      body main .top figure h1 {
+        font-size: 2em;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 4em;
+        margin: 0;
+        color: white;
+        text-transform: capitalize; }
+    body main section {
+      padding: 1em;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; }
+      body main section article {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        text-align: start;
+        grid-template-columns: 1fr;
+        margin: 2em 0;
+        border-radius: 15px;
+        box-shadow: 0px 3px 20px -2px rgba(0, 0, 0, 0.75); }
+        body main section article a {
+          background: #27350F;
+          border-radius: 15px; }
+          body main section article a img {
+            width: 100%;
+            border-radius: 15px 15px 0 0; }
+          body main section article a p {
+            padding: 1.5em;
+            margin: 0;
+            color: white; }
+    body main .sec1 blockquote {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr); }
+    body main .sec1 blockquote > * {
+      grid-column: 1/3; }
+    body main .sec2 {
+      display: flex;
+      flex-direction: column; }
+      body main .sec2 ul {
+        padding: 0;
+        list-style-type: none; }
+        body main .sec2 ul li {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          margin: 2em 0;
+          padding: 1em; }
+          body main .sec2 ul li figure {
+            margin: 0; }
+          body main .sec2 ul li input {
+            outline: none;
+            border: none;
+            color: white;
+            padding: 0.5em;
+            background-color: #17b978;
+            margin-top: 1em; }
+        body main .sec2 ul li:hover {
+          box-shadow: 0px -4px 19px -8px rgba(0, 0, 0, 0.75);
+          background-color: #35363a; }
+    body main .sec3 iframe {
+      border: 0;
+      height: 15em;
+      width: 100%; }
+  body section > * {
+    margin: 1em 0; }
+  body nav {
+    width: 100%;
+    box-shadow: 0px -7px 26px -19px rgba(0, 0, 0, 0.75);
+    background: linear-gradient(#27350F, #141E03);
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1; }
+    body nav ul {
+      display: flex;
+      margin: .5em 0;
+      flex-direction: row;
+      padding: 0;
+      justify-content: space-evenly;
+      list-style-type: none; }
+      body nav ul li {
+        width: fit-content;
+        font-size: 1.5em;
+        color: white; }
+
+/*# sourceMappingURL=style.css.map */

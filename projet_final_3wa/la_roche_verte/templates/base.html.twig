@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}La roche verte{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+            <link rel="stylesheet" href="{{ asset("css/normalize.css") }}">
+            <link rel="stylesheet" href="{{ asset("css/style.css") }}">
+        {% endblock %}
+    </head>
+    <body>
+        {% block header %}
+            <header>
+                <a href=" {{ path("accueil") }}" ><img src="{{ asset('images/camp-logo.png') }}" alt="camping-logo" ></img></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="{{ path("accueil") }}"><i class="fas fa-home"></i></a></li>
+                    <li><a href="{{ path("activites") }}"><i class="fas fa-hiking"></i></a></li>
+                    <li><a><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+        {% endblock header %}
+        
+        {% block body %}{% endblock %}
+        
+        
+        {% block footer %}
+                <footer>
+                    <div class="left">
+                        <p>notre site ce trouve :</p>
+                        <ul>
+                            <li>12 rue du pont aux pages</li>
+                            <li>44410</li>
+                            <li>Pays de la loire, France</li>
+                        </ul>
+                        <span> &copy; 2020 Dehoey valentin </span>
+                    </div>
+                    <div class="right">
+                        <p>pute</p>
+                    </div>
+                </footer>
+        {% endblock footer %}
+        {% block javascripts %}
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        {% endblock %}
+    </body>
+</html>

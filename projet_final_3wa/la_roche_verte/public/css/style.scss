@@ -1,0 +1,196 @@
+    // mobile first/////////////////////////////////////////////////////////////////
+    body {
+        background-color: #ecfffb;
+        max-width: 411px;
+        width: 100%;
+        height: 100vh;
+        img {
+            width: 100%;
+        }
+
+        header {
+            background: linear-gradient( #141E03, #27350F);
+            text-align: center;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 1em;
+            position: fixed;
+            z-index: 2;
+            img {
+                width: 20%;
+                border-style: none;
+                filter: invert(1);
+            }
+        }
+        footer {
+            padding-bottom: 4em;
+            text-align: center;
+            background-color: #17b978;
+            color: white;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            .left {
+                grid-row: 1/2;
+                p {
+                    padding: 1em;
+                }
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    li {
+                        margin: 1em;
+                    }
+                }
+            }
+            .right{
+                grid-row: 2/3;
+            }
+        }
+        main {
+            padding: 4em 0;
+            background: linear-gradient(to bottom, #086972 0%, #071a52 100%);
+            color: white;
+            h1 {
+                font-size: 1.5em;
+                width: fit-content;
+                margin: 2em auto;
+            }
+            .top {
+
+                figure {
+                    margin: 0;
+                    border-radius: 0 0 10px 10px;
+                    box-shadow: 6px 7px 25px -10px rgba(0, 0, 0, 0.75);
+
+                    img {
+                        filter: brightness(.7);
+                        width: 100%;
+                        margin-bottom: -0.5em;
+                        border-radius: 10px 10px 0 0;
+                    }
+                    figcaption {
+                        color: white;
+                        background: linear-gradient(#27350F, #141E03);
+                        padding: 1.5em 0;
+                        text-align: center;
+                    }
+                    h1 {
+                        font-size: 2em;
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        top: 4em;
+                        margin: 0;
+                        color: white;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            section {
+                padding: 1em;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+
+                article {
+
+                    display: grid;
+                    grid-template-rows: 1fr auto;
+                    text-align: start;
+                    grid-template-columns: 1fr;
+                    margin: 2em 0;
+                    border-radius: 15px;
+                    box-shadow: 0px 3px 20px -2px rgba(0, 0, 0, 0.75);
+                    a {
+                        background: #27350F;
+                        border-radius: 15px;
+                        img {
+                            width: 100%;
+                            border-radius: 15px 15px 0 0;
+                        }
+                        p {
+                            padding: 1.5em;
+                            margin: 0;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .sec1 {
+                blockquote {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                }
+                blockquote>* {
+                    grid-column: 1/3;
+                }
+
+            }
+            .sec2 {
+                display: flex;
+                flex-direction: column;
+                ul {
+                    padding: 0;
+                    list-style-type: none;
+                    li {
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: auto auto;
+                        margin: 2em 0;
+                        padding: 1em;
+
+                        figure {
+                            margin: 0;
+                        }
+                        input {
+                            outline: none;
+                            border: none;
+                            color: white;
+                            padding: 0.5em;
+                            background-color: #17b978;
+                            margin-top: 1em;
+                        }
+                    }
+                    li:hover {
+                        box-shadow: 0px -4px 19px -8px rgba(0, 0, 0, 0.75);
+                        background-color: #35363a;
+                    }
+                }
+            }
+            .sec3 {
+
+                iframe {
+                    border: 0;
+                    height: 15em;
+                    width: 100%;
+                }
+            }
+        }
+        section>* {
+            margin: 1em 0;
+        }
+        nav {
+            width: 100%;
+            box-shadow: 0px -7px 26px -19px rgba(0, 0, 0, 0.75);
+            background: linear-gradient(#27350F, #141E03);
+            border-radius: 10px 10px 0 0;
+            position: fixed;
+            bottom: 0;
+            z-index: 1;
+            ul {
+                display: flex;
+                margin: .5em 0;
+                flex-direction: row;
+                padding: 0;
+                justify-content: space-evenly;
+                list-style-type: none;
+                li {
+                    width: fit-content;
+                    font-size: 1.5em;
+                    color: white;
+                }
+            }
+        }
+    }
+    
