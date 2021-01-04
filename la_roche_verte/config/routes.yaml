@@ -1,0 +1,24 @@
+index:
+    path: /
+    controller: App\Controller\DefaultController::index
+accueil:
+    path: /accueil
+    controller: App\Controller\DefaultController::accueil
+activites:
+    path: /activites
+    controller: App\Controller\DefaultController::activites
+login:
+    path: /login
+    controller: App\Controller\DefaultController::login
+panier:
+    path: /panier
+    controller: App\Controller\DefaultController::panier
+register:
+    path: /register
+    controller: App\Controller\DefaultController::register
+admin:
+    path: /admin
+    controller: App\Controller\DefaultController::admin
+details:
+    path: /details
+    controller: App\Controller\DefaultController::details

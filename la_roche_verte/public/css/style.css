@@ -1,0 +1,924 @@
+html {
+  font-size: 62.5%; }
+
+body > * {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  background-color: #ecfffb;
+  max-width: 420px;
+  width: 100%;
+  height: 100vh; }
+  body a {
+    color: white;
+    text-decoration: none; }
+  body figcaption {
+    font-size: 0.8em; }
+  body h1 {
+    font-size: 1.5em;
+    width: fit-content;
+    margin: 2em auto;
+    letter-spacing: 5px; }
+  body h2 {
+    font-size: 1.3em; }
+  body h3 {
+    font-size: 1.2em; }
+  body h4 {
+    font-size: 1em; }
+  body img {
+    width: 100%; }
+  body .display {
+    display: none; }
+  body header {
+    background-color: #17b978;
+    text-align: center;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 1em;
+    position: fixed;
+    z-index: 2; }
+    body header img {
+      width: 4em;
+      border-style: none;
+      filter: invert(1); }
+  body nav {
+    width: 100%;
+    box-shadow: 0px -7px 26px -19px rgba(0, 0, 0, 0.75);
+    background-color: #17b978;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1; }
+    body nav ul {
+      display: flex;
+      margin: .5em 0;
+      flex-direction: row;
+      padding: 0;
+      justify-content: space-evenly;
+      list-style-type: none; }
+      body nav ul li {
+        width: fit-content;
+        font-size: 1.5em;
+        color: white; }
+  body main {
+    padding: 4em 0;
+    background: linear-gradient(to bottom, #086972 0%, #071a52 100%);
+    color: white; }
+    body main .formulaire-connexion {
+      display: grid;
+      margin: auto;
+      width: 35%;
+      grid-template-rows: repeat(5, auto);
+      grid-template-columns: 1fr; }
+      body main .formulaire-connexion input {
+        border: none;
+        outline: none;
+        height: 2em; }
+    body main .formulaire-connexion > * {
+      margin: 2em 0; }
+    body main .bouton {
+      outline: none;
+      border: none;
+      color: white;
+      padding: 0.5em;
+      background-color: #17b978;
+      margin-top: 1em; }
+  body footer {
+    padding-bottom: 4em;
+    text-align: center;
+    background-color: #17b978;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr; }
+    body footer .left {
+      grid-row: 1/2;
+      border-bottom: 1px dashed white;
+      padding: 1em;
+      text-align: left; }
+      body footer .left ul {
+        list-style-type: none;
+        padding: 0; }
+    body footer .right {
+      grid-row: 2/3;
+      text-align: right;
+      padding: 1em; }
+      body footer .right .social-media {
+        display: flex;
+        width: fit-content;
+        margin: 3em auto; }
+        body footer .right .social-media a {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          margin: auto;
+          text-decoration: none; }
+          body footer .right .social-media a .fab {
+            font-weight: 400;
+            font-size: 1.5em;
+            color: white;
+            margin: 0 1em; }
+        body footer .right .social-media .fab:hover {
+          color: black; }
+  body .top figure {
+    margin: 0;
+    box-shadow: 6px 7px 25px -10px rgba(0, 0, 0, 0.75); }
+    body .top figure picture img {
+      filter: brightness(0.7);
+      width: 100%;
+      margin-bottom: -0.5em; }
+    body .top figure picture source {
+      filter: brightness(0.7);
+      width: 100%;
+      margin-bottom: -0.5em; }
+    body .top figure figcaption {
+      color: white;
+      background-color: #17b978;
+      padding: 1.5em 0;
+      text-align: center; }
+    body .top figure h1 {
+      font-size: 2em;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 4em;
+      margin: 0;
+      color: white;
+      text-transform: capitalize; }
+
+@media screen and (max-width: 420px) {
+  main h1 {
+    margin: 2em 0; }
+  main .carte-activites {
+    width: 80%;
+    margin: 2em auto;
+    background-color: #08616f;
+    border-radius: 5px; }
+    main .carte-activites a {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 1em; }
+      main .carte-activites a img {
+        width: 100%;
+        height: fit-content;
+        border-radius: 5px; }
+      main .carte-activites a .informations-activite {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        gap: 1em;
+        height: fit-content;
+        padding: 0 1em 1em; }
+        main .carte-activites a .informations-activite .btn {
+          color: #fff;
+          background-color: #0d6efd;
+          border-color: #0d6efd;
+          border: none;
+          outline: none;
+          padding: 0.5em; }
+  main .container-form {
+    height: 70vh;
+    margin-top: 3em; }
+    main .container-form .form-login,
+    main .container-form .registration-form {
+      display: grid;
+      height: 100%;
+      margin: auto;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+      padding: 2em; }
+      main .container-form .form-login .mb-3,
+      main .container-form .registration-form .mb-3 {
+        display: grid;
+        grid-template-columns: auto auto; }
+        main .container-form .form-login .mb-3 a,
+        main .container-form .registration-form .mb-3 a {
+          background-color: #0d6efd;
+          padding: .5em;
+          margin: auto;
+          border-radius: 5px; }
+        main .container-form .form-login .mb-3 a:hover,
+        main .container-form .registration-form .mb-3 a:hover {
+          color: inherit;
+          background: #0d6efddb; }
+      main .container-form .form-login .title,
+      main .container-form .registration-form .title {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        height: fit-content;
+        gap: 0.5em;
+        text-align: center;
+        font-size: 0.8em; }
+        main .container-form .form-login .title a,
+        main .container-form .registration-form .title a {
+          background-color: #0d6efd;
+          padding: .5em;
+          border-radius: 5px;
+          margin-top: 0; }
+        main .container-form .form-login .title a:hover,
+        main .container-form .registration-form .title a:hover {
+          color: inherit;
+          background: #0d6efddb; }
+      main .container-form .form-login .title > *,
+      main .container-form .registration-form .title > * {
+        height: fit-content;
+        margin: auto; }
+      main .container-form .form-login .checkbox label input,
+      main .container-form .registration-form .checkbox label input {
+        margin-right: 1em; }
+    main .container-form .form-login > * {
+      height: 2em;
+      font-size: 1em; }
+    main .container-form .registration-form > * {
+      display: grid; }
+    main .container-form .registration-form form > * {
+      display: grid;
+      width: 100%;
+      height: 2em;
+      font-size: 1em; }
+    main .container-form .registration-form form div input {
+      height: 2em;
+      font-size: 1em; }
+    main .container-form .registration-form form div:nth-child(4) {
+      grid-template-columns: auto 1fr;
+      gap: 2em; }
+      main .container-form .registration-form form div:nth-child(4) label {
+        grid-column: 2/3;
+        width: fit-content;
+        margin: auto 0; }
+      main .container-form .registration-form form div:nth-child(4) input {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: fit-content;
+        width: fit-content;
+        margin: auto; }
+    main .container-form .registration-form form button {
+      display: block; }
+  main section {
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+  main .sec1 blockquote {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+  main .sec1 blockquote > * {
+    grid-column: 1/3; }
+  main .sec1 .activites {
+    display: flex;
+    gap: 2em;
+    flex-flow: wrap;
+    margin: 5em 0; }
+    main .sec1 .activites h2 {
+      font-size: 1.2em;
+      grid-column: 1/5; }
+    main .sec1 .activites .carte-activite {
+      width: fit-content;
+      background-color: #17b978;
+      grid-row: 2/3;
+      margin: auto;
+      padding-bottom: 1em;
+      text-align: center; }
+      main .sec1 .activites .carte-activite h3 {
+        padding: 1em 0; }
+      main .sec1 .activites .carte-activite span {
+        font-size: 0.8em;
+        margin: 2em; }
+    main .sec1 .activites .carte-activite:hover {
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+  main .sec2 {
+    display: flex;
+    flex-direction: column; }
+    main .sec2 ul {
+      padding: 0;
+      list-style-type: none; }
+      main .sec2 ul li {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        margin: 2em 0;
+        padding: 1em; }
+        main .sec2 ul li figure {
+          margin: 0; }
+        main .sec2 ul li input {
+          outline: none;
+          border: none;
+          color: white;
+          padding: 0.5em;
+          background-color: #17b978;
+          margin-top: 1em; }
+      main .sec2 ul li:hover {
+        box-shadow: 0px -4px 19px -8px rgba(0, 0, 0, 0.75);
+        background-color: #35363a; }
+  main .sec3 iframe {
+    border: 0;
+    height: 15em;
+    width: 100%; } }
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+  body {
+    max-width: 1024px; }
+    body main .connexion a {
+      background-color: #0d6efd;
+      padding: .5em;
+      margin: auto;
+      border-radius: 5px; }
+    body main .connexion a:hover {
+      color: inherit;
+      background: #0d6efddb; }
+    body main .container-form {
+      height: 70vh;
+      margin-top: 3em; }
+      body main .container-form .form-login,
+      body main .container-form .registration-form {
+        display: grid;
+        width: 30em;
+        height: 100%;
+        margin: auto;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+        padding: 2em; }
+        body main .container-form .form-login .mb-3,
+        body main .container-form .registration-form .mb-3 {
+          display: grid;
+          grid-template-columns: auto auto; }
+          body main .container-form .form-login .mb-3 a,
+          body main .container-form .registration-form .mb-3 a {
+            background-color: #0d6efd;
+            padding: .5em;
+            margin: auto;
+            border-radius: 5px; }
+          body main .container-form .form-login .mb-3 a:hover,
+          body main .container-form .registration-form .mb-3 a:hover {
+            color: inherit;
+            background: #0d6efddb; }
+        body main .container-form .form-login .title,
+        body main .container-form .registration-form .title {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          justify-content: space-between;
+          height: fit-content; }
+          body main .container-form .form-login .title a,
+          body main .container-form .registration-form .title a {
+            background-color: #0d6efd;
+            padding: .5em;
+            border-radius: 5px;
+            margin-top: 0; }
+          body main .container-form .form-login .title a:hover,
+          body main .container-form .registration-form .title a:hover {
+            color: inherit;
+            background: #0d6efddb; }
+        body main .container-form .form-login .title > *,
+        body main .container-form .registration-form .title > * {
+          height: fit-content;
+          margin: auto; }
+        body main .container-form .form-login .checkbox label input,
+        body main .container-form .registration-form .checkbox label input {
+          margin-right: 1em; }
+      body main .container-form .form-login > * {
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form > * {
+        display: grid; }
+      body main .container-form .registration-form form > * {
+        display: grid;
+        width: 100%;
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form form div label {
+        margin-bottom: 2em; }
+      body main .container-form .registration-form form div input {
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form form div:nth-child(4) {
+        grid-template-columns: auto 1fr;
+        gap: 2em; }
+        body main .container-form .registration-form form div:nth-child(4) label {
+          grid-column: 2/3;
+          width: fit-content;
+          margin: auto 0; }
+        body main .container-form .registration-form form div:nth-child(4) input {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          height: fit-content;
+          width: fit-content;
+          margin: auto; }
+      body main .container-form .registration-form form button {
+        display: block; }
+    body main section {
+      padding: 2em;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; }
+      body main section article {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        text-align: start;
+        grid-template-columns: 1fr;
+        margin: 2em 0;
+        border-radius: 15px;
+        box-shadow: 0px 3px 20px -2px rgba(0, 0, 0, 0.75); }
+        body main section article a {
+          background: #27350F;
+          border-radius: 15px; }
+          body main section article a img {
+            width: 100%;
+            border-radius: 15px 15px 0 0; }
+          body main section article a p {
+            padding: 1.5em;
+            margin: 0;
+            color: white; }
+    body main .sec1 {
+      width: fit-content;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, auto); }
+      body main .sec1 h2,
+      body main .sec1 h3,
+      body main .sec1 p {
+        grid-column: 1/3; }
+      body main .sec1 .container-blockquote {
+        grid-column: 1/3;
+        display: grid; }
+        body main .sec1 .container-blockquote blockquote {
+          padding: 2em;
+          text-align: center; }
+        body main .sec1 .container-blockquote .commentaire {
+          grid-column: 1/3;
+          grid-row: 5/6;
+          width: 100%; }
+      body main .sec1 .carousel {
+        grid-row: 5/6;
+        grid-column: 1/3; }
+      body main .sec1 .activites {
+        display: flex;
+        gap: 2em;
+        flex-flow: wrap;
+        margin: 5em 0; }
+        body main .sec1 .activites h2 {
+          font-size: 1.2em;
+          grid-column: 1/5; }
+        body main .sec1 .activites .carte-activite {
+          width: fit-content;
+          background-color: #17b978;
+          grid-row: 2/3;
+          margin: auto;
+          padding-bottom: 1em;
+          text-align: center; }
+          body main .sec1 .activites .carte-activite h3 {
+            padding: 1em 0; }
+          body main .sec1 .activites .carte-activite span {
+            font-size: 0.8em;
+            margin: 2em; }
+        body main .sec1 .activites .carte-activite:hover {
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+      body main .sec1 .introduction {
+        display: grid;
+        grid-column: 1/3;
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+        margin: 10em 0; }
+      body main .sec1 .introduction h2:nth-child(1) {
+        grid-row: 1/2;
+        width: fit-content;
+        display: contents; }
+      body main .sec1 .introduction p:nth-child(2) {
+        text-align: left;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+      body main .sec1 .introduction h2:nth-child(3) {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        width: fit-content;
+        display: contents; }
+      body main .sec1 .introduction p:nth-child(4) {
+        text-align: left;
+        grid-column: 2/3;
+        grid-row: 2/3; }
+    body main .sec2 {
+      display: flex;
+      flex-direction: column; }
+      body main .sec2 ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; }
+        body main .sec2 ul li {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(2, auto);
+          margin: 2em 0;
+          padding: 1em; }
+          body main .sec2 ul li figure {
+            margin: 0; }
+          body main .sec2 ul li input {
+            outline: none;
+            border: none;
+            color: white;
+            padding: 0.5em;
+            background-color: #17b978;
+            margin-top: 1em; }
+        body main .sec2 ul li:hover {
+          box-shadow: 0px -4px 19px -8px rgba(0, 0, 0, 0.75);
+          background-color: #35363a; }
+    body main .sec3 iframe {
+      border: 0;
+      height: 15em;
+      width: 100%; } }
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+  body {
+    max-width: inherit; }
+    body header {
+      display: none; }
+    body nav {
+      width: 7vw;
+      height: 100%;
+      border-radius: 0; }
+      body nav ul {
+        display: grid;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-evenly;
+        list-style-type: none;
+        gap: 2em; }
+        body nav ul .display {
+          display: block;
+          filter: invert(1); }
+        body nav ul li {
+          width: fit-content;
+          margin: auto;
+          padding: 1em 0;
+          font-size: 1.5em;
+          color: white; }
+          body nav ul li a .display {
+            display: block;
+            filter: invert(1); }
+    body main,
+    body footer {
+      width: 93vw;
+      margin-left: 7vw;
+      padding: 5em; }
+      body main .top,
+      body footer .top {
+        display: none; }
+    body main .connexion a {
+      background-color: #0d6efd;
+      padding: .5em;
+      margin: auto;
+      border-radius: 5px; }
+    body main .connexion a:hover {
+      color: inherit;
+      background: #0d6efddb; }
+    body main .container-form {
+      height: 70vh; }
+      body main .container-form .form-login,
+      body main .container-form .registration-form {
+        display: grid;
+        width: 30em;
+        height: 100%;
+        margin: auto;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+        padding: 2em; }
+        body main .container-form .form-login .mb-3,
+        body main .container-form .registration-form .mb-3 {
+          display: grid;
+          grid-template-columns: auto auto; }
+          body main .container-form .form-login .mb-3 a,
+          body main .container-form .registration-form .mb-3 a {
+            background-color: #0d6efd;
+            padding: .5em;
+            margin: auto;
+            border-radius: 5px; }
+          body main .container-form .form-login .mb-3 a:hover,
+          body main .container-form .registration-form .mb-3 a:hover {
+            color: inherit;
+            background: #0d6efddb; }
+        body main .container-form .form-login .title,
+        body main .container-form .registration-form .title {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          justify-content: space-between;
+          height: fit-content; }
+          body main .container-form .form-login .title a,
+          body main .container-form .registration-form .title a {
+            background-color: #0d6efd;
+            padding: .5em;
+            border-radius: 5px;
+            margin-top: 0; }
+          body main .container-form .form-login .title a:hover,
+          body main .container-form .registration-form .title a:hover {
+            color: inherit;
+            background: #0d6efddb; }
+        body main .container-form .form-login .title > *,
+        body main .container-form .registration-form .title > * {
+          height: fit-content;
+          margin: auto; }
+        body main .container-form .form-login .checkbox label input,
+        body main .container-form .registration-form .checkbox label input {
+          margin-right: 1em; }
+      body main .container-form .form-login > * {
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form > * {
+        display: grid; }
+      body main .container-form .registration-form form > * {
+        display: grid;
+        width: 100%;
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form form div label {
+        margin-bottom: 2em; }
+      body main .container-form .registration-form form div input {
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form form div:nth-child(4) {
+        grid-template-columns: auto 1fr;
+        gap: 2em; }
+        body main .container-form .registration-form form div:nth-child(4) label {
+          grid-column: 2/3;
+          width: fit-content;
+          margin: auto 0; }
+        body main .container-form .registration-form form div:nth-child(4) input {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          height: fit-content;
+          width: fit-content;
+          margin: auto; }
+      body main .container-form .registration-form form button {
+        display: block; }
+    body main .sec1 {
+      text-align: center; }
+      body main .sec1 .container-blockquote {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2em;
+        margin: 5em 0; }
+        body main .sec1 .container-blockquote .display {
+          display: block;
+          filter: invert(1);
+          width: 200px; }
+        body main .sec1 .container-blockquote .resverse {
+          transform: scaleX(-1); }
+        body main .sec1 .container-blockquote blockquote {
+          height: fit-content;
+          margin: auto;
+          text-align: center; }
+      body main .sec1 .activites {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto auto;
+        gap: 2em;
+        margin: 10em 0; }
+        body main .sec1 .activites h2 {
+          font-size: 1.2em;
+          grid-column: 1/5; }
+        body main .sec1 .activites .carte-activite {
+          width: fit-content;
+          background-color: #17b978;
+          grid-row: 2/3; }
+          body main .sec1 .activites .carte-activite h3 {
+            padding: 1em 0; }
+          body main .sec1 .activites .carte-activite span {
+            font-size: 0.8em; }
+        body main .sec1 .activites .carte-activite:hover {
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+      body main .sec1 .introduction {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        margin: 10em 0; }
+        body main .sec1 .introduction p {
+          grid-row: 2/3;
+          text-align: left; }
+    body main .sec2 {
+      display: flex;
+      flex-direction: column; }
+      body main .sec2 ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; }
+        body main .sec2 ul li {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(2, auto);
+          margin: 2em 0;
+          padding: 1em; }
+          body main .sec2 ul li figure {
+            margin: 0; }
+          body main .sec2 ul li input {
+            outline: none;
+            border: none;
+            color: white;
+            padding: 0.5em;
+            background-color: #17b978;
+            margin-top: 1em; }
+        body main .sec2 ul li:hover {
+          box-shadow: 0px -4px 19px -8px rgba(0, 0, 0, 0.75);
+          background-color: #35363a; }
+    body main .sec3 iframe {
+      border: 0;
+      height: 15em;
+      width: 100%; } }
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: inherit; }
+    body header {
+      display: none; }
+    body nav {
+      width: 7vw;
+      height: 100%;
+      border-radius: 0; }
+      body nav ul {
+        display: grid;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-evenly;
+        list-style-type: none;
+        gap: 2em; }
+        body nav ul .display {
+          display: block;
+          filter: invert(1); }
+        body nav ul li {
+          width: fit-content;
+          margin: auto;
+          padding: 1em 0;
+          font-size: 1.5em;
+          color: white; }
+    body main,
+    body footer {
+      width: 93vw;
+      margin-left: 7vw;
+      padding: 5em;
+      letter-spacing: 1px; }
+      body main .top,
+      body footer .top {
+        display: none; }
+    body main .connexion a {
+      background-color: #0d6efd;
+      padding: .5em;
+      margin: auto;
+      border-radius: 5px; }
+    body main .connexion a:hover {
+      color: inherit;
+      background: #0d6efddb; }
+    body main .container-form {
+      height: 70vh; }
+      body main .container-form .form-login,
+      body main .container-form .registration-form {
+        display: grid;
+        width: 30em;
+        height: 100%;
+        margin: auto;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+        padding: 2em; }
+        body main .container-form .form-login .mb-3,
+        body main .container-form .registration-form .mb-3 {
+          display: grid;
+          grid-template-columns: auto auto; }
+          body main .container-form .form-login .mb-3 a,
+          body main .container-form .registration-form .mb-3 a {
+            background-color: #0d6efd;
+            padding: .5em;
+            margin: auto;
+            border-radius: 5px; }
+          body main .container-form .form-login .mb-3 a:hover,
+          body main .container-form .registration-form .mb-3 a:hover {
+            color: inherit;
+            background: #0d6efddb; }
+        body main .container-form .form-login .title,
+        body main .container-form .registration-form .title {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          justify-content: space-between;
+          height: fit-content; }
+          body main .container-form .form-login .title a,
+          body main .container-form .registration-form .title a {
+            background-color: #0d6efd;
+            padding: .5em;
+            border-radius: 5px;
+            margin-top: 0; }
+          body main .container-form .form-login .title a:hover,
+          body main .container-form .registration-form .title a:hover {
+            color: inherit;
+            background: #0d6efddb; }
+        body main .container-form .form-login .title > *,
+        body main .container-form .registration-form .title > * {
+          height: fit-content;
+          margin: auto; }
+        body main .container-form .form-login .checkbox label input,
+        body main .container-form .registration-form .checkbox label input {
+          margin-right: 1em; }
+      body main .container-form .form-login > * {
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form > * {
+        display: grid; }
+      body main .container-form .registration-form form > * {
+        display: grid;
+        width: 100%;
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form form div label {
+        margin-bottom: 2em; }
+      body main .container-form .registration-form form div input {
+        height: 2em;
+        font-size: 1em; }
+      body main .container-form .registration-form form div:nth-child(4) {
+        grid-template-columns: auto 1fr;
+        gap: 2em; }
+        body main .container-form .registration-form form div:nth-child(4) label {
+          grid-column: 2/3;
+          width: fit-content;
+          margin: auto 0; }
+        body main .container-form .registration-form form div:nth-child(4) input {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          height: fit-content;
+          width: fit-content;
+          margin: auto; }
+      body main .container-form .registration-form form button {
+        display: block; }
+    body main section {
+      width: 75%;
+      margin: auto; }
+    body main .sec1 {
+      text-align: center; }
+      body main .sec1 h1 {
+        margin: auto; }
+      body main .sec1 .container-blockquote {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 2em;
+        margin: 5em 0; }
+        body main .sec1 .container-blockquote .display {
+          display: block;
+          width: 200px;
+          filter: invert(1); }
+        body main .sec1 .container-blockquote .resverse {
+          transform: scaleX(-1); }
+        body main .sec1 .container-blockquote blockquote {
+          height: fit-content;
+          margin: auto;
+          text-align: center; }
+      body main .sec1 .carousel {
+        display: none; }
+      body main .sec1 .activites {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: auto auto;
+        gap: 2em;
+        margin: 10em 0; }
+        body main .sec1 .activites h2 {
+          font-size: 1.2em;
+          grid-column: 1/5; }
+        body main .sec1 .activites .carte-activite {
+          width: fit-content;
+          background-color: #17b978;
+          grid-row: 2/3; }
+          body main .sec1 .activites .carte-activite h3 {
+            padding: 1em 0; }
+          body main .sec1 .activites .carte-activite span {
+            font-size: 0.8em; }
+        body main .sec1 .activites .carte-activite:hover {
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75); }
+      body main .sec1 .introduction {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        margin: 10em 0; }
+        body main .sec1 .introduction p {
+          grid-row: 2/3;
+          text-align: left; }
+    body main .sec2 {
+      display: flex;
+      flex-direction: column; }
+      body main .sec2 ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; }
+        body main .sec2 ul li {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(2, auto);
+          margin: 2em 0;
+          padding: 1em; }
+          body main .sec2 ul li figure {
+            margin: 0; }
+          body main .sec2 ul li input {
+            outline: none;
+            border: none;
+            color: white;
+            padding: 0.5em;
+            background-color: #17b978;
+            margin-top: 1em; }
+        body main .sec2 ul li:hover {
+          box-shadow: 0px -4px 19px -8px rgba(0, 0, 0, 0.75);
+          background-color: #35363a; }
+    body main .sec3 iframe {
+      border: 0;
+      height: 15em;
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

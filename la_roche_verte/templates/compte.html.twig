@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <main>
+        <form method="POST" class="formulaire-connexion" >
+            <h1>Connexion</h1>
+            <label for="email">Entrer votre adresse email : </label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="password">Entrer votre mot de passe : </label>
+            <input type="password" name="password" id="password" required>
+            
+            <input type="submit" class="bouton" ></input>
+        </form>
+        
+        {#<form method="POST" >#}
+        {#    <h1>Creer un compte</h1>#}
+        {#    <label for="email">Entrer votre adresse email: </label>#}
+        {#    <input type="email" name="email" id="email" required>#}
+            
+        {#    <label for="nom">Entrer votre nom: </label>#}
+        {#    <input type="text" name="nom" id="nom" required>#}
+            
+        {#    <label for="prenom">Entrer votre prenom: </label>#}
+        {#    <input type="text" name="prenom" id="prenom" required>#}
+            
+        {#    <label for="pseudo">Entrer votre pseudo: </label>#}
+        {#    <input type="text" name="pseudo" id="pseudo" required>#}
+            
+        {#    <label for="password">Entrer votre mot de passe: </label>#}
+        {#    <input type="password" name="password" id="password" required>#}
+        {#</form>#}
+    </main>
+{% endblock body %}

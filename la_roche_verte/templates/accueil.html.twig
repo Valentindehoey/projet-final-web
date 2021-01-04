@@ -1,0 +1,175 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <main>
+        <div class="top">
+            <figure>
+                <picture>
+                  <source media="(max-width:401px)" srcset="{{ asset('images/320w/camp-img-1.jpg') }}">
+                  <source media="(min-width:402px)" srcset="{{ asset('images/770w/camp-770w.jpg') }}">
+                  <img src="{{ asset('images/camp-img-1.jpg') }}" alt="campement">
+                </picture>
+                <h1>a la roche verte</h1>
+                <figcaption>Photo de icon0.com provenant de Pexels</figcaption>
+            </figure>
+        </div>
+        <section class="sec1">
+            <h1><b>Une experience</b> inoubliable dans notre camping 3 étoiles</h1>
+            
+            <div class="introduction">
+                <h2>Un voyage au coeur de la mer</h2>
+                <p>Venez découvrir notre camping ainsi que d'innombrable activités <b> à proximité </b> pour passer un sejour inoubliable, Vous pourrez profiter de prestations <b>haut de gamme</b> dans notre établissement, mais aussi choisir de dormir au plus proche de la mer pour contempler le soleil couchant au fil de l'eau</p>
+                
+                <h2>Pour les enfant aussi</h2>
+                <p>Vos petits et grands profiteront d'excursions réalisées par nos animateurs, en fonction de leur age  ils auront acces à un club qui proposera des <b>divertissements</b>  tel que des balades à vélo sur les santiers cotiers ou en forêt, en bord de mer pour apprendre le <b>kitesurfing</b> ou encore <b>Planche à voile</b>  </p>
+            </div>
+            
+                <h2>les services du camping</h2>
+            <div class="activites">
+                {#<a href="{{ path("activites") }}" >voir toutes les activités</a>#}
+                <div class="carte-activite">
+                    <img src="{{ asset('images/300w/pool.jpg') }}" ></img>
+                    <h3>piscine</h3>
+                    <span>Photo by <a href="https://stocksnap.io/author/38325">OW Pictures</a> from <a href="https://stocksnap.io">StockSnap</a></span>
+                </div>
+                <div class="carte-activite">
+                    <img src="{{ asset('images/300w/golf.jpg') }}" ></img>
+                    <h3>Golf</h3>
+                    <span>Photo by <a href="https://stocksnap.io/author/20658">Aaron Burden</a> from <a href="https://stocksnap.io">StockSnap</a></span>
+                </div>
+                <div class="carte-activite">
+                    <img src="{{ asset('images/300w/bar.jpg') }}" ></img>
+                    <h3>Bar</h3>
+                    <span>Photo by <a href="https://stocksnap.io/author/46014">Isabella Mendes</a> from <a href="https://stocksnap.io">StockSnap</a></span>
+                </div>
+                <div class="carte-activite">
+                    <img src="{{ asset('images/300w/market.jpg') }}" ></img>
+                    <h3>Marché</h3>
+                    <span>Photo by <a href="https://stocksnap.io/author/daria">Daria Shevtsova</a> from <a href="https://stocksnap.io">StockSnap</a></span>
+                </div>
+                
+            </div>
+            
+            <h2>Voici quelques avis de nos clients :</h2>
+            
+            <div class="container-blockquote">
+                <img src="{{ asset("images/laurier.png") }}" class="display" ></img>
+                <blockquote>
+                    <h4>mike Korn</h4>
+                    <p>le 17/09/2019</p>
+                    <p><q> Un sejour à renouveler absolument </q></p>
+                    <p>à pris le pack : Temps en pause</p>
+                    <span>Note du séjour : 19/20</span>
+                </blockquote>
+                <blockquote>
+                    <h4>Samuel de kamplain</h4>
+                    <p>le 3/05/2017</p>
+                    <p><q> Séjour parfait, les enfants se sont amusés </q></p>
+                    <p>à pris le pack : curieux</p>
+                    <span>Note du séjour : 18/20</span>
+                </blockquote>
+                <blockquote class="commentaire" >
+                    <h4>Jean baptsite Charcot</h4>
+                    <p>le 1/04/2020</p>
+                    <p><q> C'est partir à l'aventure mais avec un coté vacance </q></p>
+                    <p>à pris le pack : Aventurier</p>
+                    <span>Note du séjour : 16/20</span>
+                </blockquote>
+                <img src="{{ asset("images/laurier.png") }}" class="display resverse" ></img>
+            </div>
+            
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                      <source media="(max-width:401px)" srcset="{{ asset('images/320w/activite-1-320w.jpg') }}">
+                      <source media="(min-width:402px)" srcset="{{ asset('images/770w/activite-1-770w.jpg') }}">
+                      <img src="{{ asset('images/770w/activite-1-320w.jpg') }}" alt="feu-de-camp" class="d-block w-100">
+                    </picture>
+                  Photo by <a href="https://stocksnap.io/author/37849">Phil Coffman</a> from <a href="https://stocksnap.io">StockSnap</a>
+                </div>
+                <div class="carousel-item">
+                  <picture>
+                      <source media="(max-width:401px)" srcset="{{ asset('images/320w/activite-2-320w.jpg') }}">
+                      <source media="(min-width:402px)" srcset="{{ asset('images/770w/activite-2-770w.jpg') }}">
+                      <img src="{{ asset('images/770w/activite-1-320w.jpg') }}" alt="foret" class="d-block w-100"
+                  Photo by <a href="https://stocksnap.io/author/17217">Olivier Guillard</a> from <a href="https://stocksnap.io">StockSnap</a>
+                </div>
+                <div class="carousel-item">
+                  <picture>
+                      <source media="(max-width:401px)" srcset="{{ asset('images/320w/activite-3-320w.jpg') }}">
+                      <source media="(min-width:402px)" srcset="{{ asset('images/770w/activite-3-770w.jpg') }}">
+                      <img src="{{ asset('images/770w/activite-1-320w.jpg') }}" alt="foret" class="d-block w-100">
+                    </picture>
+                 Photo by <a href="https://stocksnap.io/author/50238">Mel Elías</a> from <a href="https://stocksnap.io">StockSnap</a>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+            
+            
+        </section>
+        
+        <section class="sec2">
+            <h1>Laissez vos envies vous guider</h1>
+            <p>Choisissez la tranquillitée avec nos packages sur-mesure : </p>
+            <ul>
+                <li>
+                
+                    <figure>
+                        <h2>En pause</h2>
+                        <picture>
+                          <source media="(max-width:401px)" srcset="{{ asset('images/320w/packN1_320w.jpg') }}">
+                          <source media="(min-width:770px)" srcset="{{ asset('images/770w/packN1_770w.jpg') }}">
+                          <img src="{{ asset('images/320w/packN1_320w.jpg') }}" alt="pack-temps-en-pause">
+                        </picture>
+                        <figcaption>Photo by <a href="https://stocksnap.io/author/34233">averie woodard</a> from <a href="https://stocksnap.io">StockSnap</a></figcaption>
+                    </figure>
+                    <input type="submit" value="Voir" ></input>
+                    
+                </li>
+                <li>
+                
+                    <figure>
+                        <h2>Curieux</h2>
+                        <picture>
+                          <source media="(max-width:401px)" srcset="{{ asset('images/320w/packN2_320w.jpg') }}">
+                          <source media="(min-width:770px)" srcset="{{ asset('images/770w/packN2_770w.jpg') }}">
+                          <img src="{{ asset('images/320w/packN2_320w.jpg') }}" alt="pack-curieux">
+                        </picture>
+                        <figcaption>Photo by <a href="https://stocksnap.io/author/candacemcdaniel">Candace McDaniel</a> from <a href="https://stocksnap.io">StockSnap</a></figcaption>
+                    </figure>
+                    <input type="submit" value="Voir" ></input>
+                </li>
+                <li>
+                
+                    <figure>
+                        <h2>Aventurier</h2>
+                        <picture>
+                          <source media="(max-width:401px)" srcset="{{ asset('images/320w/packN3_320w.jpg') }}">
+                          <source media="(min-width:770px)" srcset="{{ asset('images/770w/packN3_770w.jpg') }}">
+                          <img src="{{ asset('images/320w/packN3_320w.jpg') }}" alt="pack-aventurier">
+                        </picture>
+                        <figcaption>Photo by <a href="https://stocksnap.io/author/33690">Francisco Moreno</a> from <a href="https://stocksnap.io">StockSnap</a></figcaption>
+                    </figure>
+                    <input type="submit" value="Voir" ></input>
+                </li>
+               
+            </ul>
+            <p>Votre choix est déja fait n'est-ce pas ?</p>
+        </section>
+        <section class="sec3">
+            <h1>Mais en attendant jettons un oeil sur la localisation de notre site</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15269.416561259372!2d-2.3876903542316774!3d47.426041879227675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1609282349517!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        
+        
+    </main>
+{% endblock body %}

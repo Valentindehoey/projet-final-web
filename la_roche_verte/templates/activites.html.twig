@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<main>
+    <h1>Découvrez des activités</h1>
+    {% for activite in activites %}
+        <div class="carte-activites">
+            <a>
+                <img src="{{ asset("images/200w/"~activite.getImage() ) }}" ></img>
+                <div class="informations-activite">
+                    <h2>{{ activite.getNom() }}</h2>
+                    {#<p>{{ activite.getDescription() }}</p>#}
+                    <p>{{ activite.getPrix() }} €</p>
+                    <p>{{ activite.getDuree() }} Heures</p>
+                    <a href="{{ path('details', {id: activite.id }) }}" class="btn-activite">Voir plus</a>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</main>
+{% endblock body %}

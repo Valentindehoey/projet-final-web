@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+        <img src="{{ asset("images/200w/"~activite.getImage() }}" ></img>
+        <div class="informations-activite">
+            <h2>{{ activite.getNom() }}</h2>
+            <p>{{ activite.getDescription() }}</p>
+            <p>{{ activite.getPrix() }} €</p>
+            <p>{{ activite.getDuree() }} Heures</p>
+            <input type="submit" value="Ajouter au panier"></input>
+        </div>
+{% endblock body %}
