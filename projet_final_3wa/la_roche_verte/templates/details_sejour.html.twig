@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <main>
+        <img src=" {{ asset("images/320w/"~sejours[id-1].getImage() ) }} "></img>
+        <h1>Voici le sejour : {{ sejours[id-1].getNom() }}</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>mon tableau</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ sejours[id-1].getDuree() }}</td>
+                </tr>
+                <tr>
+                    <td>{{ sejours[id-1].getActivites() }}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>{{ sejours[id-1].getPrix() }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+{% endblock body %} 
